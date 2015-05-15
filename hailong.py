@@ -77,8 +77,8 @@ def run():
                 elif option == "log":
 
 
-                    log_path = "/var/auth.log"
-                    # Get path of /var/auth.log
+                    log_path = "/var/log/auth.log"
+                    # Get path of /var/log/auth.log
                     try:
                         log_path = sys.argv[i+1]
                     except:
