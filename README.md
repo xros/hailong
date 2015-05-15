@@ -8,7 +8,7 @@ By Alexander Liu
 * Usage:   
 
 
-```bash
+```
 This program prints files to the standard output.
     Any number of files can be specified.
     Options include:
