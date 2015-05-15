@@ -5,7 +5,11 @@ By Alexander Liu
 
 * To IPs from those brute-force scanners who tried to pentrate SSH server. The log is stored in **/var/log/auth.log**.
 
-* Usage: ```This program prints files to the standard output.
+* Usage:   
+
+
+```bash
+This program prints files to the standard output.
     Any number of files can be specified.
     Options include:
         --version               : Prints the version number
