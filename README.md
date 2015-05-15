@@ -18,3 +18,9 @@ This program prints files to the standard output.
         --show-intruders        : Show intruders' IPs (This has to be worked with flag "--log")
         --show-landers          : Show landers' IPs (This has to be worked with flag "--log")
 ```
+
+In real world: 
+![alt text][logo]
+
+[logo]: https://github.com/xros/hailong/raw/master/images/show.png "Hailong"
+

@@ -29,8 +29,7 @@ def get_a_intruder_ip(file_line):
 def get_a_lander_ip(file_line):
     if file_line[:-1].__contains__("Accepted password"):
         # return a piece of ip
-        #return file_line[:-1].split(" ")[10]
-        return file_line[:-1]
+        return file_line[:-1].split(" ")[10]
 
 
 
@@ -98,7 +97,6 @@ def run():
 
                             # Do something: get_a_intruder_ip/get_a_lander_ip
                             if ('--show-intruders' in sys.argv) and ('--show-landers' in sys.argv):
-                                print get_a_intruder_ip(file_line=l)
                                 intruders_set.add(get_a_intruder_ip(file_line=l))
                                 landers_set.add(get_a_lander_ip(file_line=l))
 
@@ -111,10 +109,22 @@ def run():
                             if ('--show-intruders' not in sys.argv) and ('--show-landers' not in sys.argv):
                                 pass
 
+                    # Remove None in set ( This is a Python2 bug, has to do this :(  )
+                    try:
+                        intruders_set.remove(None) 
+                    except KeyError, e:
+                        pass
 
-                    for x in list(intruders_set):
+                   
+                    try:
+                        landers_set.remove(None) 
+                    except KeyError, e:
+                        pass
+
+                    # Print IP results out
+                    for x in intruders_set:
                         print(x)
-                    for x in list(landers_set):
+                    for x in landers_set:
                         print(x)
 
 
