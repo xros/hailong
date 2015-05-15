@@ -4,7 +4,11 @@ import os
 
 
 def show_help():
-    print"""This program prints files to the standard output. 
+    print"""Hailong
+    
+    Find intruders and landers.
+    
+    This program prints files to the standard output. 
     Any number of files can be specified. 
     Options include: 
         --version               : Prints the version number 
